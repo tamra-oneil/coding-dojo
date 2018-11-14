@@ -1,5 +1,5 @@
 {
-  "name": "ceaser shift cipher",
+  "name": "caesar-shift-cipher",
   "scripts": {
     "test": "mocha -w"
   },
