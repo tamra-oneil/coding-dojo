@@ -10,7 +10,8 @@ describe('Caesar Shift Cipher', () => {
         assert.equal(result, 'B');
     })
 
+    it('should shift "AB" to "BC"', () => {
 
-
+    })
   })
 });
