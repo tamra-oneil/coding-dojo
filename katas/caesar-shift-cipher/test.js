@@ -14,5 +14,15 @@ describe('Caesar Shift Cipher', () => {
         const result = caesar(1, 'AB');
         assert.equal(result, 'BC');
     })
+
+    it('should shift "AC" to "BD"', () => {
+      const result = caesar(1, 'AC');
+      assert.equal(result, 'BD');
+    })
+
+    it('should shift "AC F" to "BD G"', () => {
+      const result = caesar(1, 'AC F');
+      assert.equal(result, 'BD G');
+    })
   })
 });
