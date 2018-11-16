@@ -1,9 +1,12 @@
 const caesar = (shift, value) => {
-    const charCodeValue = value.charCodeAt(0)
-    const returnCharCode = charCodeValue + 1
-    console.log('char code of output', returnCharCode)
+    let charCodeValues = value.split('').map((symbol) => {
+         return symbol.charCodeAt(0) + shift;
+    });
+    charCodeValues = charCodeValues.join('');
+    console.log('char code of output', charCodeValues);
 
-    return String.fromCharCode(returnCharCode);
+
+    return String.fromCharCode(charCodeValues);
 };
 
 module.exports = {
