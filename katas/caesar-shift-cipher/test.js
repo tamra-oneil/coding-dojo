@@ -38,6 +38,10 @@ describe('Caesar Shift Cipher', () => {
             const result = caesar(1, 'Z');
             assert.equal(result, 'A');
         })
+        it('should shift Y to A', () => {
+            const result = caesar(2, 'Y');
+            assert.equal(result, 'A');
+        })
     })
 
 });
