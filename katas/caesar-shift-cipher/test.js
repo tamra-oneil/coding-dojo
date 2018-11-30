@@ -31,5 +31,13 @@ describe('Caesar Shift Cipher', () => {
             const result = caesar(2, 'AB');
             assert.equal(result, 'CD');
         });
+    });
+
+    context('when shift moves past the last symbol', () => {
+        it('should shift Z to A', () => {
+            const result = caesar(1, 'Z');
+            assert.equal(result, 'A');
+        })
     })
+
 });
