@@ -47,9 +47,15 @@ describe('Caesar Shift Cipher', () => {
             assert.equal(result, 'C');
         })
         it('should shift some words ', () => {
-            const result = caesar(5, 'Your');
+            const result = caesar(5, 'YOUR');
             console.log(result);
             assert.equal(result, 'DTZW')
+        })
+    })
+    context('when handling lower case characters', () => {
+        it('should shift a to b', () => {
+            const result = caesar(1, 'a');
+            assert.equal(result, 'b');
         })
     })
 });

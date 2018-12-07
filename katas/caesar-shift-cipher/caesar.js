@@ -1,5 +1,7 @@
-const firstSymbol = 'A';
-const lastSymbol = 'Z';
+const firstUpperCase = 'A';
+const firstLowerCase = 'a';
+const lastUpperSymbol = 'Z';
+const lastLowerCase = 'z';
 const caesar = (shift, value) => {
 
 
@@ -15,11 +17,13 @@ const caesar = (shift, value) => {
 
 const getNextCharCode = (currentCharCode, shift) => {
     const shifted = currentCharCode + shift;
-    const lastCharCode = lastSymbol.charCodeAt(0);
+    const lastCharCode = lastUpperSymbol.charCodeAt(0);
+
+    console.log('shifted', shifted, lastCharCode);
+
     if(shifted > lastCharCode){
         const delta = shifted - (lastCharCode + 1);
-
-        return firstSymbol.charCodeAt(0) + delta;
+        return firstUpperCase.charCodeAt(0) + delta;
     }
     return shifted;
 };
